@@ -39,7 +39,6 @@ const LogoutButton = (props) => {
   return (
         <Button
         color="secondary"
-        data-testid="submit"
         fullWidth
         size="large"
         onClick={props.onClick}
@@ -58,7 +57,6 @@ const App = () => {
 
     const handleClick = () => {
       setAuth(!isAuthenticated);
-      console.log('hi')
     }
   
     if (isAuthenticated) {
